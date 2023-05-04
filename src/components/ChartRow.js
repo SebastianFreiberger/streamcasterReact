@@ -2,10 +2,12 @@ import React from 'react';
 
 
 function ChartRow(props){
-    return (
+    console.log(props)
+    return (        
         <tr>
-            <td>{props.id}</td>
+            {/* <td>{props.id}</td> */}
             <td>{props.nombre}</td>
+            <td>{props.apellido}</td>
             <td>{props.email}</td>
             <td><a href={`http://localhost:3000${props.detail}`}>{props.detail}</a></td>   
         </tr>
